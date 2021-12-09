@@ -14,6 +14,6 @@ def yolo_create_list(src_path, filepath):
     return
 
 if __name__ == "__main__":
-	listfilename = "./rf_images.txt"
-	src_path = "/home/kei/jun_25_test_anechoic_merged_wifis"
+	listfilename = "../data/lb_train.txt"
+	src_path = "/home/hai/workspace/yolov3/data/lb_train"
 	yolo_create_list(src_path, listfilename)
