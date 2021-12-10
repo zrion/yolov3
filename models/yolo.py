@@ -110,7 +110,7 @@ class Model(nn.Module):
         if isinstance(m, Detect):
             s = 256  # 2x min stride
 
-            m_factor = 11 # Compress
+            m_factor = 12 # Compress
 
             m.inplace = self.inplace
             m.stride = torch.tensor([s / x.shape[-2] for x in self.forward(torch.zeros(1, ch, s*m_factor, s))])  # forward
